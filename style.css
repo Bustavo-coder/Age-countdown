@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.big-box{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+}
+.inner-box{
+    width: 70%;
+    background-color:white;
+    padding: 10px;
+    border-radius:20px 20px 100px 20px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: left;
+}
+.inner-box form{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 10px;
+}
+.inner-box label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight: 100;
+    font-size: 20px;
+}
+.inner-box input{
+    all: unset;
+    width: 60%;
+    border: 5px solid rgba(0, 0, 0, 0.801);
+    border-radius: 10px;
+    padding: 10px;
+    height: 7vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+}
+.inner-box ::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.623);
+    font-family:100px;
+    font-weight:bolder;
+}
+.btn{
+    all: unset;
+    display:block;
+    width: 100px;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 20px;
+    align-items: center;
+    background-color:yellow;
+    border-radius:70px;
+    text-align: center;
+}
+.inner-box h1{
+     font-size: 100px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
+}
+.years,.month,.days{
+    font-size: 100px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline color(srgb 100 50 0);
+}
+@media screen and (max-width:1100px) {
+    .inner-box{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    .inner-box input{
+        width: 80%;
+        height: 5vh;
+    }
+}
+@media screen and (max-width:700px) {
+    .inner-box{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .inner-box h1{
+        font-size: 70px;
+    }
+    .years,.month,.days{
+        font-size: 70px;
+    }
+    .btn{
+        margin: auto;
+        margin-top: 20px;
+    }
+     .inner-box input{
+        width: 60%;
+        height: 3vh;
+    }
+}
+@media screen and (max-width : 400px) {
+    .inner-box{
+        margin: auto;
+    }
+    .big-box{
+        width: 100%;
+        margin: auto;
+    }
+    .inner-box h1{
+        font-size: 50px;
+    }
+   
+    .years,.month,.days{
+        font-size: 50px;
+    }
+    
+}
